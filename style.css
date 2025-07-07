@@ -174,12 +174,24 @@ body {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background-image: url('img/background7.jpg');
+    background-image:url(img/background7.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     position: relative;
     mask-image: linear-gradient(rgba(0, 0, 0, 1)90%, rgba(0, 0, 0, 0));
+}
+
+.hero .mask-container {
+    position:absolute;
+    /* background: orange; */
+    inset: 0;
+    mask-image:url(img/background7_1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    mask-size: cover;
+    mask-position: center;
 }
 
 /* .hero::after {
@@ -264,7 +276,11 @@ body {
 
 .about .row .about-img {
     flex: 1 1 45rem;
-    
+    mask-image: url(img/engine.svg);
+    mask-size: cover;
+    mask-position: center;
+
+    mask-repeat: no-repeat;
 
 }
 
